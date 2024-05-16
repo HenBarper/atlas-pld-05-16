@@ -58,9 +58,9 @@
 
 #### Pagination
 
-- Limit the data shown in the table to 10 rows at a time
-- Clickng the Next button should change the table to show the next 10 results.
-- Clicking the Previous button should change the table to show the previous 10 results.
+- Limit the data shown in the table to 5 rows at a time
+- Clickng the Next button should change the table to show the next 5 results.
+- Clicking the Previous button should change the table to show the previous 5 results.
 - Disable the next button if on the first page of results.
 - Disable the previous button if on the last page of results.
 - You will need to utilize the state hook to keep track of which page you are on.
