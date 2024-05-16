@@ -1,4 +1,4 @@
-export default function ClassSchedule() {
+export default function ClassSchedule({ classes = null }) {
   return (
     <div className="class-schedule">
       <h1>Class Schedule</h1>
@@ -11,13 +11,15 @@ export default function ClassSchedule() {
           </tr>
         </thead>
         <tbody>
+          {classes.map((schoolClass) => (
           <tr>
-            <td>OS1000</td>
-            <td>Fundamentals of Open Source Operating Systems</td>
+            <td>{schoolClass.courseNumber}</td>
+            <td>{schoolClass.courseName}</td>
             <td>
               <button>Drop</button>
             </td>
           </tr>
+          ))}
         </tbody>
       </table>
     </div>
